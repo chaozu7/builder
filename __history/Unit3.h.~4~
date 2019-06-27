@@ -1,0 +1,29 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit3H
+#define Unit3H
+//---------------------------------------------------------------------------
+#endif
+
+
+class TDocument : public TTabSheet
+{
+	public:
+		TDocument(TPageControl *APageControl);
+        __fastcall TDocument();
+		__fastcall ~TDocument();
+		void LoadFromFile(String AFileName);
+		TRichEdit *RichEdit;
+		String FileName;
+};
+
+ TDocument::TDocument(TPageControl *APageControl): TTabSheet(APageControl)
+	{
+	PageControl = APageControl;
+	Caption = "Nowy dokument";
+	RichEdit = new TRichEdit(this);
+	RichEdit->Parent = this;
+	RichEdit->Align = alClient;
+	RichEdit->ScrollBars = ssBoth;
+	RichEdit->WordWrap = false;
+};

@@ -1,0 +1,82 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit1H
+#define Unit1H
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Vcl.Menus.hpp>
+#include <Vcl.ComCtrls.hpp>
+#include <Vcl.Dialogs.hpp>
+#include <Vcl.ExtCtrls.hpp>
+//---------------------------------------------------------------------------
+
+class TDocument : public TTabSheet
+{
+	public:
+		TDocument(TPageControl *APageControl);
+        __fastcall TDocument();
+		__fastcall ~TDocument();
+		void LoadFromFile(String AFileName);
+		TRichEdit *RichEdit;
+		String FileName;
+};
+class TForm1 : public TForm
+{
+__published:	// IDE-managed Components
+	TMainMenu *MainMenu1;
+	TMenuItem *Plik1;
+	TMenuItem *Nowyctrln1;
+	TMenuItem *Otwrzctrlo1;
+	TMenuItem *Zapiszctrls1;
+	TMenuItem *Zakoczctrle1;
+	TMenuItem *Edycja1;
+	TMenuItem *Cofnijctrlz1;
+	TMenuItem *Wytnijctrlc1;
+	TMenuItem *Kopiujctrlc1;
+	TMenuItem *Wklejctrlv1;
+	TMenuItem *Format1;
+	TMenuItem *Czcionka1;
+	TMenuItem *Pomoc1;
+	TMenuItem *Informacje1;
+	TMenuItem *Oprogramie1;
+	TMenuItem *Pomoconline1;
+	TOpenDialog *OpenDialog1;
+	TSaveDialog *SaveDialog1;
+	TMenuItem *Zapiszjako1;
+	TMenuItem *Zawijaniewierszy1;
+	TFontDialog *FontDialog1;
+	TButton *Button1;
+	TPageControl *PageControl1;
+	TTabSheet *TabSheet1;
+	TRichEdit *karta;
+	TStatusBar *StatusBar1;
+	void __fastcall Otwrzctrlo1Click(TObject *Sender);
+	void __fastcall Zapiszjako1Click(TObject *Sender);
+	void __fastcall Zapiszctrls1Click(TObject *Sender);
+	void __fastcall Nowyctrln1Click(TObject *Sender);
+	void __fastcall kartaKeyDown(TObject *Sender, WORD &Key, TShiftState Shift);
+	void __fastcall Zakoczctrle1Click(TObject *Sender);
+	void __fastcall FormClose(TObject *Sender, TCloseAction &Action);
+	void __fastcall Wytnijctrlc1Click(TObject *Sender);
+	void __fastcall Kopiujctrlc1Click(TObject *Sender);
+	void __fastcall Wklejctrlv1Click(TObject *Sender);
+	void __fastcall Zawijaniewierszy1Click(TObject *Sender);
+	void __fastcall Czcionka1Click(TObject *Sender);
+	void __fastcall Oprogramie1Click(TObject *Sender);
+	void __fastcall Pomoconline1Click(TObject *Sender);
+	void __fastcall Cofnijctrlz1Click(TObject *Sender);
+	void __fastcall Button1Click(TObject *Sender);
+
+
+
+private:	// User declarations
+public:		// User declarations
+	__fastcall TForm1(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm1 *Form1;
+//---------------------------------------------------------------------------
+#endif

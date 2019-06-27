@@ -1,0 +1,189 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Notatnik'
+  ClientHeight = 589
+  ClientWidth = 985
+  Color = clBackground
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clTeal
+  Font.Height = -13
+  Font.Name = 'Gadugi'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  OnClose = FormClose
+  OnKeyDown = kartaKeyDown
+  PixelsPerInch = 96
+  TextHeight = 16
+  object PageControl1: TPageControl
+    Left = 0
+    Top = 44
+    Width = 985
+    Height = 570
+    Hint = '"Nowa karta"'
+    ActivePage = TabSheet1
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'TabSheet1'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -13
+      Font.Name = 'Candara'
+      Font.Style = []
+      ParentFont = False
+      ExplicitWidth = 631
+      ExplicitHeight = 297
+      object karta: TRichEdit
+        AlignWithMargins = True
+        Left = 3
+        Top = 3
+        Width = 971
+        Height = 533
+        Align = alClient
+        Color = clBlack
+        Font.Charset = EASTEUROPE_CHARSET
+        Font.Color = clWhite
+        Font.Height = -19
+        Font.Name = 'Times New Roman'
+        Font.Style = []
+        Lines.Strings = (
+          '')
+        ParentFont = False
+        ScrollBars = ssVertical
+        TabOrder = 0
+        Zoom = 100
+        OnKeyDown = kartaKeyDown
+        ExplicitWidth = 974
+        ExplicitHeight = 501
+      end
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Top = 570
+    Width = 985
+    Height = 19
+    Panels = <
+      item
+        Text = 'Liczba liter:'
+        Width = 200
+      end
+      item
+        Text = 'Liczba s'#322#243'w:'
+        Width = 200
+      end
+      item
+        Text = 'Liczba wyraz'#243'w:'
+        Width = 200
+      end
+      item
+        Text = 'Liczba akapit'#243'w: '
+        Width = 200
+      end>
+    ExplicitTop = 361
+    ExplicitWidth = 639
+  end
+  object Button1: TButton
+    Left = 840
+    Top = 5
+    Width = 126
+    Height = 33
+    BiDiMode = bdRightToLeftNoAlign
+    Caption = 'Dodaj dokument'
+    HotImageIndex = 2
+    ParentBiDiMode = False
+    TabOrder = 2
+    OnClick = dodajZakladke
+  end
+  object MainMenu1: TMainMenu
+    Left = 272
+    object Plik1: TMenuItem
+      Caption = '&Plik'
+      object Nowyctrln1: TMenuItem
+        Caption = '&Nowy  ctrl+n'
+        OnClick = Nowyctrln1Click
+      end
+      object Otwrzctrlo1: TMenuItem
+        Caption = '&Otw'#243'rz  ctrl+o'
+        OnClick = Otwrzctrlo1Click
+      end
+      object Zapiszctrls1: TMenuItem
+        Caption = '&Zapisz  ctrl+s'
+        OnClick = Zapiszctrls1Click
+      end
+      object Zapiszjako1: TMenuItem
+        Caption = 'Zapisz jako...'
+        OnClick = Zapiszjako1Click
+      end
+      object Zakoczctrle1: TMenuItem
+        Caption = '&Zako'#324'cz ctrl+e'
+        OnClick = Zakoczctrle1Click
+      end
+    end
+    object Edycja1: TMenuItem
+      Caption = '&Edycja'
+      object Cofnijctrlz1: TMenuItem
+        Caption = '&Cofnij  ctrl+z'
+        OnClick = Cofnijctrlz1Click
+      end
+      object Wytnijctrlc1: TMenuItem
+        Caption = '&Wytnij  ctrl+x'
+        OnClick = Wytnijctrlc1Click
+      end
+      object Kopiujctrlc1: TMenuItem
+        Caption = '&Kopiuj  ctrl+c'
+        OnClick = Kopiujctrlc1Click
+      end
+      object Wklejctrlv1: TMenuItem
+        Caption = '&Wklej  ctrl+v'
+        OnClick = Wklejctrlv1Click
+      end
+    end
+    object Format1: TMenuItem
+      Caption = '&Format'
+      object Czcionka1: TMenuItem
+        Caption = '&Czcionka'
+        OnClick = Czcionka1Click
+      end
+      object Zawijaniewierszy1: TMenuItem
+        Caption = 'Zawijanie wierszy'
+        Checked = True
+        OnClick = Zawijaniewierszy1Click
+      end
+    end
+    object Pomoc1: TMenuItem
+      Caption = '&Pomoc'
+      object Informacje1: TMenuItem
+        Caption = 'Informacje'
+        object Oprogramie1: TMenuItem
+          Caption = 'O programie'
+          OnClick = Oprogramie1Click
+        end
+        object Pomoconline1: TMenuItem
+          Caption = 'Pomoc online'
+          OnClick = Pomoconline1Click
+        end
+      end
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = 'Pliki tekstowe (.txt)|*txt|Wszystkie pliki|*.*'
+    Left = 208
+  end
+  object SaveDialog1: TSaveDialog
+    Filter = 'Plik tekstowy(.txt)|*txt|Dowolny plik|*.*'
+    Options = [ofOverwritePrompt, ofHideReadOnly, ofEnableSizing]
+    Left = 304
+  end
+  object FontDialog1: TFontDialog
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Left = 240
+  end
+end

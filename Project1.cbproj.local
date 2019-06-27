@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.775,=C:\Users\Kamcio-Norcio\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.202,=C:\Users\KN\Desktop\Projekt_zjazd-20190627T064718Z-001\Projekt_zjazd\Unit3.cpp</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.612,C:\Users\Kamcio-Norcio\Desktop\Projekt_zjazd\Unit1.dfm=C:\Users\Kamcio-Norcio\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.036,C:\Users\Kamcio-Norcio\Desktop\Projekt_zjazd\Project1PCH1.h=C:\Users\Kamcio-Norcio\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.558,=C:\Users\Kamcio-Norcio\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.612,C:\Users\Kamcio-Norcio\Desktop\Projekt_zjazd\Unit1.h=C:\Users\Kamcio-Norcio\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.904,C:\Users\Kamcio-Norcio\Desktop\Projekt_zjazd\Project1.cbproj=C:\Users\Kamcio-Norcio\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.612,C:\Users\Kamcio-Norcio\Desktop\Projekt_zjazd\Unit1.cpp=C:\Users\Kamcio-Norcio\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.490,=C:\Users\Kamcio-Norcio\Desktop\Projekt_zjazd\Unit2.cpp</Transaction>
+  </Transactions>
+</BorlandProject>

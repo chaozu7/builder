@@ -1,0 +1,18 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit3H
+#define Unit3H
+//---------------------------------------------------------------------------
+#endif
+
+
+class TDocument : public TTabSheet
+{
+	public:
+		TDocument(TPageControl *APageControl);
+        TDocument();
+		__fastcall ~TDocument();
+		void LoadFromFile(String AFileName);
+		TRichEdit *RichEdit;
+		String FileName;
+};
